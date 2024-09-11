@@ -1,0 +1,218 @@
+[gd_scene load_steps=12 format=3 uid="uid://d04spcl1lynu3"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://bea0wjkq5ycti" path="res://kayak_physics_material.tres" id="1_drl0f"]
+[ext_resource type="Script" path="res://kayak.gd" id="1_i2ufp"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b0oi2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g0uu2"]
+radius = 0.752549
+height = 4.82886
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_dg8ak"]
+
+[sub_resource type="Animation" id="Animation_e23ql"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Row1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Row1/MeshInstance3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("..:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -0.6)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kqhv0"]
+resource_name = "row1 down"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Row1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Row1/MeshInstance3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.3, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6e7vr"]
+resource_name = "row1 up"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../../Row1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../../Row1/MeshInstance3D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -0.3, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_hdf4v"]
+resource_name = "row2 down"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -0.3, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_twybn"]
+resource_name = "row2 up"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -0.6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -0.3, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_cs3nr"]
+_data = {
+"RESET": SubResource("Animation_e23ql"),
+"row1 down": SubResource("Animation_kqhv0"),
+"row1 up": SubResource("Animation_6e7vr"),
+"row2 down": SubResource("Animation_hdf4v"),
+"row2 up": SubResource("Animation_twybn")
+}
+
+[node name="kayak" type="RigidBody3D"]
+mass = 90.0
+physics_material_override = ExtResource("1_drl0f")
+script = ExtResource("1_i2ufp")
+row_force = 2.0
+
+[node name="kayak" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.83624, 0, 0, 0, 1.13512, 0, 0, 0, 1.13512, 0, 0, 0)
+mesh = SubResource("BoxMesh_b0oi2")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37087e-08, -1, -4.85962e-10, 0.999938, -4.37114e-08, 0.0111175, -0.0111175, 0, 0.999938, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_g0uu2")
+
+[node name="Row1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.6)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row1"]
+transform = Transform3D(0.1, 0, 0, 0, 1.079, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_dg8ak")
+
+[node name="Row2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.6)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Row2"]
+transform = Transform3D(0.1, 0, 0, 0, 1.07857, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_dg8ak")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Row2/MeshInstance3D")
+libraries = {
+"": SubResource("AnimationLibrary_cs3nr")
+}
