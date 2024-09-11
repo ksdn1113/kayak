@@ -4,7 +4,18 @@
 
 Implementado en Godot 4.3
 
+
 W.I.P.
+
+
+Para poder probar el proyecto dentro del motor de videojuegos elegido:
+0. Tener descargado Godot 4.3
+1. Descargar y copiar los archivos del repositorio/clonar el repositorio a una carpeta con el nombre que deseen
+2. Abrir Godot 4.3
+3. Buscar la opción de Importar (esquina superior izquierda)
+4. Buscar la carpeta creada en el paso 1, y seleccionarla
+5. Aceptar y abrir el proyecto
+
 
 #11/09/2024
 
